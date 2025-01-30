@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .Project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            font-size: xx-large;
+            background-color: rgb(165, 188, 185);
+            padding: 60px;
+            margin: 6%;
+        }
+        .Project h2 { 
+            color: rgb(98, 120, 110);
+        }
+        .Project .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 0px;
+        }
+        .item{
+            display: flex;
+            margin-left: 15%;    
+            flex-direction: column;
+            align-items: center;
+            background: #f9f9f9;
+            padding: 5px;
+            border-radius: 8px;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .item.Project-1 {  
+            grid-column: 1 / 2;  
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .item h3 {
+            font-size: 18px;
+            font-weight: bold;
+            font-style: italic;
+            color: rgb(77, 96, 87);
+        }
+        @media (max-width: 768px) {
+            .Project {
+                padding: 40px;
+            }
+            
+            .parent {
+                grid-template-columns: 1fr 1fr;  
+            }
+
+            .item {
+                width: 250px;
+                margin-left: 10%;
+            }
+
+            img {
+                width: 250px;
+                height: 150px;
+            }
+
+            .item h3 {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .Project {
+                padding: 30px;
+            }
+
+            .parent {
+                grid-template-columns: 1fr;  
+            }
+
+            .item {
+                width: 200px;
+                margin-left: 0; 
+            }
+
+            img {
+                width: 200px;
+                height: 130px;
+            }
+
+            .item h3 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h3>Zahra Kintani Ayu Nadine</h3>
+    <nav class="nav-footer">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    </header>
+    
+    <div class="Project"> 
+        <h2 class="my-project">My Project</h2>
+    </div>
+    <div class="parent">
+        <div class="item">
+            <img src="img\npd.jpg" class="Project-1">
+            <h3>Preloved Website</h3>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js\script.js"></script> 
+    
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .section1{
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center; 
+            height: 90vh; 
+            text-align: center;
+        }
+        .section1 .img-profile{
+            max-width: 100%;
+            width: 200px; 
+            height: 200px;
+            border-radius: 50%; 
+            object-fit: cover; 
+            display: block;
+        }
+        .greetings {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            gap: 10px;
+            font-size: xx-large;
+            background-color: rgb(255, 255, 255);
+        }
+        .greetings h2.welcome{
+            color:rgb(165, 188, 185);
+            margin-top: 10px;
+        }
+        .greetings h1.name{
+            color: rgb(111, 138, 125);
+        }
+        .greetings h5.quote{
+            color:rgb(165, 188, 185);;
+            font-style: italic;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .section1 {
+                padding: 20px;  
+            }
+
+            .section1 .img-profile {
+                width: 150px;
+                height: 150px; 
+            }
+
+            .greetings {
+                gap: 15px; 
+                font-size: large;  
+            }
+
+            .greetings h2.welcome {
+                font-size: 1.5rem; 
+            }
+
+            .greetings h1.name {
+                font-size: 2rem; 
+            }
+
+            .greetings h5.quote {
+                font-size: 1.2rem; 
+            }
+        }
+
+        
+        @media (max-width: 480px) {
+            .section1 {
+                height: auto;  
+                padding: 15px; 
+            }
+
+            .section1 .img-profile {
+                width: 120px; 
+                height: 120px;
+            }
+
+            .greetings {
+                gap: 10px; 
+                font-size: medium; 
+            }
+
+            .greetings h2.welcome {
+                font-size: 1.2rem;  
+            }
+
+            .greetings h1.name {
+                font-size: 1.5rem; 
+            }
+
+            .greetings h5.quote {
+                font-size: 1rem; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h3>Zahra Kintani Ayu Nadine</h3>
+    <nav class="nav-footer">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    </header>
+     <!-- untuk foto profile-->
+    <section class="section1">
+        <img src="img\foto_profile.jpg" class="img-profile">
+        <div class="greetings">
+            <h2 class="welcome">Welcome Aboard!✨</h2>
+            <h1 class="name">I'm Zahra Kintani Ayu Nadine</h1>
+            <br>
+            <h5 class="quote">Let’s embark on this journey together!</h5>
+        </div>
+    </section> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js\script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .title h2{
+            text-align: center;
+            margin-top: 14%;
+            font-size: 40px;
+            color: rgb(111, 138, 125);
+        }
+        @media (max-width: 768px) {
+            .title h2 {
+                font-size: 30px; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title h2 {
+                font-size: 24px; 
+            }
+        }
+        .logo {
+            display: flex;
+            justify-content: center; 
+            margin-top: 2%; 
+            gap: 20px;
+        }
+        .logo img{
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .logo img:hover {
+            transform: scale(1.05);
+            box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.4);
+        }
+        @media (max-width: 768px) {
+            .logo-img {
+                width: 40px; 
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-img {
+                width: 30px; 
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h3>Zahra Kintani Ayu Nadine</h3>
+    <nav class="nav-footer">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    </header>
+    <div class="title">
+        <h2>Let’s Connect! <br>💌Feel free to get in touch💌</h2>
+    </div>
+    <div class="logo">
+        <a href="https://www.instagram.com/zahrakintanii_">
+            <img src="img/lucide--instagram.svg" class="kompilasi-logo">
+        </a>
+        <a href="https://www.linkedin.com/in/zahrakintani">
+            <img src="img/linkedin.svg" class="kompilasi-logo">
+        </a>
+        <a href="https://github.com/zahraKAN">
+            <img src="img/github.svg" class="kompilasi-logo">
+        </a>
+    </div>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
